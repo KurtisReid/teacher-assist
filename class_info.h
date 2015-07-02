@@ -55,6 +55,7 @@ Accessors functions
 
 */
 #include<string>
+#include "class_material.h"
 using namespace std;
 
 class Class_info
