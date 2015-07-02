@@ -60,6 +60,13 @@ void Class_info::make_worksheet()
 	//adding basic information
 	new_worksheet << get_full_name() << "\t" << get_class_name() << "\t" << get_course_number() << endl;
 	
+	material.pick_chapter(new_worksheet);
+	
+	// to do later: allow multiple chapters to be picked
+	
+	// closing file
+	new_worksheet.close();
+	
 	
 	
 }

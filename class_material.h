@@ -1,7 +1,8 @@
 // class_material.h
 /*
-	void create_ws();
-	asks users for which chapters did the class go over. 
+	void pick_chapter(ofstream& writefile);
+	asks users for which chapters did the class go over. passes textfile to chapter material.
+	once returned ask user if they want to go to any other chapters
 
 
 */
@@ -16,8 +17,8 @@ class Class_material
 	public:
 		Class_material();
 		Class_material(map<int, Chapter_material>, stack<string>);
-		void create_ws();
-		void pick_chapter()
+		//void create_ws();//creates the basic hw file, puts class info
+		void pick_chapter(ofstream& writefile);
 		
 	private:
 		map<int, Chapter_material> book;//<int is chapter number, 
