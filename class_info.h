@@ -41,6 +41,10 @@ Accessors functions
 		Pre: course_number is initialized
 		Post: returns course_number
 		
+	void make_worksheet();
+		calls the create_ws function in class_material
+		Pre: Class material is intitialized and has information
+		
 	void print_info();
 		Pre:
 		Post: prints instructor_first_name, instructor_last_name, class_name, and course_number to the screen
@@ -70,6 +74,8 @@ class Class_info
 		string get_full_name() {return instructor_first_name + "," + instructor_last_name;}
 		string get_class_name() {return class_name;}
 		string get_course_number() {return course_number;}
+		
+		void make_worksheet();
 		
 		void print_info();
 	

@@ -1,6 +1,7 @@
 // class_material.h
 /*
-
+	void create_ws();
+	asks users for which chapters did the class go over. 
 
 
 */
@@ -15,7 +16,7 @@ class Class_material
 	public:
 		Class_material();
 		Class_material(map<int, Chapter_material>, stack<string>);
-		void create_ws(stack<string>& HW_problems_stack, map<int, Chapter_material> book);
+		void create_ws();
 		
 	private:
 		map<int, Chapter_material> book;//<int is chapter number, 
