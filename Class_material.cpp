@@ -26,7 +26,7 @@ Class_material::Class_material(map<int, Chapter_material>, stack<string>)
 //void Class_material::create_ws();//creates the basic hw file, puts class info
 void Class_material::pick_chapter(ofstream& writefile)
 {
-	int chapter;
+	
 	bool multiple_chapters = true;
 	string mult_chap;
 	
@@ -35,25 +35,48 @@ void Class_material::pick_chapter(ofstream& writefile)
 	cout << "1 = yes" << endl << "else = no" << endl;
 	cin >> mult_chap;
 	
-	if (mult_chap = "1")
+	if (mult_chap = "1")// if mutltiple chapters
 	{
 		do {
-			// ask for chapter
-			cout << "what chapter was today's material in?"
-			
-			//navigating to chapter
-			auto look = book.find(chapter);
-			if (look != book.end())
+			get_chapter(writefile);
+			cout << "another chapter?" << endl;
+			cout << "1 = yes" << endl << "else = no" << endl;
+			cin >> mult_chap;
+			if (mult_chap = "1")
 			{
-				cout << "found " << look->first << " " << look->second << endl;
-				
-				//calling pick_sections function in chapter material
-				look->second.pick_sections(writefile);
+				// do nothing
 			}
-		
+			else
+			{
+				multiple_chapters = false;
+			}
 		
 		} while (multiple_chapters);
 	}
+	else//only one chapter
+	{
+		get_chapter(writefile);
+	}
 	
 	
+}
+
+void Class_material::get_chapter(ofstream& writefile)
+{
+	int chapter;
+	// ask for chapter
+	cout << "what chapter was today's material in?"
+			
+	//navigating to chapter
+	auto look = book.find(chapter);
+	if (look != book.end())
+	{
+		cout << "found " << look->first << " " << look->second << endl;
+				
+		//prinitng chapter number on to file
+		writefile << chapter << endl;
+				
+		//calling pick_sections function in chapter material, passes the text file
+		look->second.pick_sections(writefile);
+	}
 }
