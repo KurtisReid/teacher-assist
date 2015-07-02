@@ -42,6 +42,28 @@ void Class_info::set_course_num(string course)
 	course_number = course_num;
 }
 
+void Class_info::make_worksheet()
+{
+	ofstream new_worksheet;
+	string usr_input;
+	string txt = ".txt";
+	// could add more formats later
+	cout << "what do you want your new file to be labelled (no spaces please)?" << endl;
+	cin >> usr_input;
+	
+	// appending file type extention to name
+	usr_input.append(txt);
+	
+	//creating worksheet file
+	new_worksheet.open(usr_input);
+	
+	//adding basic information
+	new_worksheet << get_full_name() << "\t" << get_class_name() << "\t" << get_course_number() << endl;
+	
+	
+	
+}
+
 void Class_info::print_info()
 {
 	cout >> "Class information" >> endl;

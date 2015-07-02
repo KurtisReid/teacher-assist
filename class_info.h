@@ -42,8 +42,9 @@ Accessors functions
 		Post: returns course_number
 		
 	void make_worksheet();
-		calls the create_ws function in class_material
+		creteas new text file with basic information, calls the pick_chapter function in class_material
 		Pre: Class material is intitialized and has information
+		Post: file contianing homework problems is created and has homework problems on it
 		
 	void print_info();
 		Pre:
@@ -71,11 +72,11 @@ class Class_info
 		//assessor functions
 		string get_instructor_first_name() {return instructor_first_name;}
 		string get_last_name() {return instructor_last_name;}
-		string get_full_name() {return instructor_first_name + "," + instructor_last_name;}
+		string get_full_name() {return instructor_last_name + ", " + instructor_first_name;}
 		string get_class_name() {return class_name;}
 		string get_course_number() {return course_number;}
 		
-		void make_worksheet();
+		void make_worksheet();// creteas new text file with basic information
 		
 		void print_info();
 	

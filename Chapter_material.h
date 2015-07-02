@@ -30,21 +30,3 @@ class Chapter_material
 	
 };
 
-class Chapter_subsections
-{
-	public:
-		Chapter_subsections();
-		Chapter_subsections(string ws_name, ifstream& problems_file);
-		void modify_information();
-		
-		//for later development
-		//void select_HW_material(stack<string>& HW_problems_stack);// user selects what material was covered and calls get problems
-		//void get_problems(stack<string>& problems_stack);//stack passed by reference, allows user to pick specific problems
-		
-		void print_to_file(ofstream& writefile);
-	private:
-		string file_name;
-		ifstream myfile ("example.txt");//file containing problems 
-		
-	
-}

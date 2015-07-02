@@ -17,6 +17,7 @@ class Class_material
 		Class_material();
 		Class_material(map<int, Chapter_material>, stack<string>);
 		void create_ws();
+		void pick_chapter()
 		
 	private:
 		map<int, Chapter_material> book;//<int is chapter number, 
