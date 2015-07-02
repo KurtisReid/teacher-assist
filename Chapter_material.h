@@ -19,12 +19,12 @@ class Chapter_material
 		string chapter_name;
 		int chapter_num;
 		int chapter_sections;
-		
+		map<int, Chapter_subsections> sections;
 	
 	
 };
 
-class Chapter_subsections: public Chapter_material
+class Chapter_subsections
 {
 	public:
 		void set_information(string str);

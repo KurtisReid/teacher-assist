@@ -78,5 +78,6 @@ class Class_info
 		string instructor_last_name;
 		string class_name;// ex. calculus 1
 		string course_number;// ex ma2024
+		Class_material material;//object contains material
 	
 };
