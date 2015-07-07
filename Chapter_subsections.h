@@ -10,13 +10,15 @@
 #include<map>
 #include<iostream>
 #include<fstream>
+#include<list>
 using namespace std;
 
 class Chapter_subsections
 {
 	public:
 		Chapter_subsections();
-		Chapter_subsections(string ws_name, ifstream& problems_file);
+		//Chapter_subsections(string ws_name, ifstream& problems_file);
+		Chapter_subsections(list<string> hw);
 		void modify_information();
 		
 		//for later development
@@ -25,8 +27,10 @@ class Chapter_subsections
 		
 		void print_to_file(ofstream& writefile);
 	private:
-		string file_name;
-		ifstream myfile ("example.txt");//file containing problems 
+		//string file_name;
+		//ifstream myfile ("example.txt");//file containing problems
+		
+		list<string> hw_list;
 		
 	
 };
