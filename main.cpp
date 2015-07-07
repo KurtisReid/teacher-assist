@@ -17,6 +17,8 @@ using namespace std;
 
 int main () 
 {
+	Class_info math("kurtis", "reid", "Calculus_1", "CSE_15057");
+	math.make_worksheet();
 	
 	
 	
