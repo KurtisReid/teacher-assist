@@ -28,5 +28,8 @@ void Chapter_subsections::modify_information()
 
 void Chapter_subsections::print_to_file(ofstream& writefile)
 {
-	
+	for (iterator it = hw_list.begin(); it != hw_list.end(); ++it)
+	{
+		writefile << *it << endl;
+	}
 }
