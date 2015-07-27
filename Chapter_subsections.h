@@ -10,13 +10,40 @@ Input/Modification functions:
 	Post: The list of strings, hw_list, will have another problem added to it
 	
 Accessor functions:
-	void print_to_file(ofstream& writefile);
-	prints all problems in hw_list to passed textfile
+	void print_to_file(ofstream& writefile, list<string> prob_list);
+	prints all problems in prob_list to passed textfile
 	Pre: ofstream passed to function must be initialized to text file. Hw_list must have problems in it and must be a list of strings.
 	Post: problems in hw_list are written to text file
 
+	void select_HW_material(ofstream& writefile);
+	User selects what material was covered and calls function get_problems. gets all problems related to material
+	Pre:
+	Post:
 	
-	please close files when done
+	void select_specific_problems(ofstream& writefile);
+	User selects specific problems to put on homework and calls function print_to_file. Ex. 2-27 Odd
+	Pre:
+	Post:
+	
+	void get_problems(list<string>& HW_problems_list);
+	Gets specified hw problems, puts into a list, then calls print_to_file
+	Pre: Problems exist 
+	Post: more problems have been printed to file
+	
+	void hw_settings();
+	User selects if they want all problems (complete_hw_list), subject-based problems, or specific problems to be printed to file.
+	Program calls functions accordingly.
+	Pre:
+	Post:
+	
+	
+Member variables:
+	list<string> hw_list;
+	Containes all the problems in the section
+	
+	
+Notes to self:
+	-please close files when done
 */
 
 #include<string>
@@ -40,13 +67,13 @@ class Chapter_subsections
 		//void select_specific_problems();//user selects specific problems to put on homework. Ex. 2-27 Odd
 		//void get_problems(stack<string>& problems_stack);//stack passed by reference, allows user to pick specific problems
 		
-		void print_to_file(ofstream& writefile);
+		void print_to_file(ofstream& writefile, list<string> prob_list);
 		
 	private:
 		//string file_name;
 		//ifstream myfile ("example.txt");//file containing problems
 		
-		list<string> hw_list;
+		list<string> complete_hw_list;
 		
 	
 };

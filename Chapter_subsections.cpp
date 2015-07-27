@@ -35,10 +35,10 @@ void Chapter_subsections::select_specific_problems()
 }
 */
 
-void Chapter_subsections::print_to_file(ofstream& writefile)
+void Chapter_subsections::print_to_file(ofstream& writefile, list<string> prob_list)
 {
 	
-	for (iterator it = hw_list.begin(); it != hw_list.end(); ++it)
+	for (iterator it = prob_list.begin(); it != prob_list.end(); ++it)
 	{
 		writefile << *it << endl;
 	}
