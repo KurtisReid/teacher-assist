@@ -1,6 +1,20 @@
 // Chapter_subsections.h
 /*
 	chapter number, section
+Constructor functions:
+
+Input/Modification functions:
+	void modify_information();
+	Allows the user to input a new problem into the file.
+	Pre: The list of strings must exist
+	Post: The list of strings, hw_list, will have another problem added to it
+	
+Accessor functions:
+	void print_to_file(ofstream& writefile);
+	prints all problems in hw_list to passed textfile
+	Pre: ofstream passed to function must be initialized to text file. Hw_list must have problems in it and must be a list of strings.
+	Post: problems in hw_list are written to text file
+
 	
 	please close files when done
 */
