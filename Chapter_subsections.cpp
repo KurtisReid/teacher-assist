@@ -25,12 +25,19 @@ void Chapter_subsections::modify_information()
 	hw_list.push_back(usr_inp);
 }
 
-//for later development
+/*for later development
 //void select_HW_material(stack<string>& HW_problems_stack);// user selects what material was covered and calls get problems
 //void get_problems(stack<string>& problems_stack);//stack passed by reference, allows user to pick specific problems
+void Chapter_subsections::select_specific_problems()
+{
+	//user selects specific problems to put on homework. Ex. 2-27 Odd
+	
+}
+*/
 
 void Chapter_subsections::print_to_file(ofstream& writefile)
 {
+	
 	for (iterator it = hw_list.begin(); it != hw_list.end(); ++it)
 	{
 		writefile << *it << endl;

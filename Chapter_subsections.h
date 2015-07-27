@@ -22,8 +22,8 @@ class Chapter_subsections
 		void modify_information();
 		
 		//for later development
-		void select_HW_material(stack<string>& HW_problems_stack);// user selects what material was covered and calls get problems. gets all problems related to material
-		void select_specific_problems();//user selects specific problems to put on homework. Ex. 2-27 Odd
+		//void select_HW_material(stack<string>& HW_problems_stack);// user selects what material was covered and calls get problems. gets all problems related to material
+		//void select_specific_problems();//user selects specific problems to put on homework. Ex. 2-27 Odd
 		//void get_problems(stack<string>& problems_stack);//stack passed by reference, allows user to pick specific problems
 		
 		void print_to_file(ofstream& writefile);
