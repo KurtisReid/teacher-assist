@@ -29,7 +29,7 @@ Input/Modification functions:
 
 Accessor functions:
 	void pick_sections(ofstream& writefile);
-	ask user to input subsection number, maps to subsections, writes information onto file
+	ask user what subsection they want input subsection number, maps to subsections, writes information onto file
 	
 	
 Member variables:
@@ -48,7 +48,7 @@ Member variables:
 Notes to self:
 	please close files when done
 */
-
+#include "Chapter_subsections.h"
 #include<string>
 #include<stack>
 #include<map>

@@ -15,14 +15,14 @@ Chapter_subsections::Chapter_subsections()
 }
 Chapter_subsections::Chapter_subsections(list<string> hw)
 {
-	hw_list = hw;
+	complete_hw_list = hw;
 }
 void Chapter_subsections::modify_information()
 {
 	string usr_inp;
 	cout << "please enter the problem you wish to insert into the list:" << endl;
 	cin >> usr_inp;
-	hw_list.push_back(usr_inp);
+	complete_hw_list.push_back(usr_inp);
 }
 
 /*for later development
