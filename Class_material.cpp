@@ -23,6 +23,15 @@ Class_material::Class_material(map<int, Chapter_material>, stack<string>)
 {
 	
 }
+
+void Class_material::create_book()
+{
+	//map<int, Chapter_material> book;
+	
+	
+}
+
+
 //void Class_material::create_ws();//creates the basic hw file, puts class info
 void Class_material::pick_chapter(ofstream& writefile)
 {

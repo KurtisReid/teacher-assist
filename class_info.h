@@ -63,6 +63,7 @@ class Class_info
 	public:
 		Class_info();// default constructor
 		Class_info(string first, string last, string class_n, string course_num);// constructor
+		Class_info(string first, string last, string class_n, string course_num, Class_material c_mat);
 		// mutator functions
 		void set_instructors_first_name(string first);
 		void set_instructors_last_name(string last);
@@ -77,6 +78,8 @@ class Class_info
 		string get_class_name() {return class_name;}
 		string get_course_number() {return course_number;}
 		
+		void create_material();//create material
+		void add_more_material();
 		void make_worksheet();// creteas new text file with basic information
 		
 		void print_info();

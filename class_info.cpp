@@ -42,6 +42,23 @@ void Class_info::set_course_num(string course)
 	course_number = course_num;
 }
 
+void Class_info::create_material()
+{
+	//create new material from scratch
+	/*
+		class material
+		chapter material
+		chapter subsections
+	
+	*/
+	
+}
+
+void Class_info::add_more_material()
+{
+	//add to preexisting material
+}
+
 void Class_info::make_worksheet()
 {
 	ofstream new_worksheet;

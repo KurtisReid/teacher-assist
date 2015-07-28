@@ -66,6 +66,7 @@ class Chapter_subsections
 {
 	public:
 		Chapter_subsections();
+		Chapter_subsections(int num);
 		//Chapter_subsections(string ws_name, ifstream& problems_file);
 		Chapter_subsections(list<string> hw);
 		void modify_information();
@@ -82,7 +83,7 @@ class Chapter_subsections
 	private:
 		//string file_name;
 		//ifstream myfile ("example.txt");//file containing problems
-		
+		int sub_sect_num;
 		list<string> complete_hw_list;
 		
 	

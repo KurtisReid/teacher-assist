@@ -63,3 +63,26 @@ void Chapter_material::pick_sections(ofstream& writefile)
 
 	
 }
+
+void Chapter_material::set_section(int num)
+{
+	//map<int, Chapter_subsections> sections;
+	
+	Chapter_subsections chap_subsect = Chapter_subsections(num);
+	bool stay = true;
+	int choice;
+	cout << "modify info in chapter_subsection" << endl;
+	do
+	{
+		chap_subsect.modify_information();
+		cout << "modify more?" << endl;
+		cout << "	1 = yes" << endl;
+		cout << "	else = no" << endl;
+		cin >> choice;
+		if (choice != 1)
+		{
+			stay = false;
+		}
+	} while (stay == true);
+	cout << "chapter_subsection modification finished" << endl;
+}

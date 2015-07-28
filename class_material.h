@@ -18,6 +18,7 @@ class Class_material
 	public:
 		Class_material();
 		Class_material(map<int, Chapter_material>, stack<string>);
+		void create_book();
 		//void create_ws();//creates the basic hw file, puts class info
 		void pick_chapter(ofstream& writefile);
 		void get_chapter(ofstream& writefile);

@@ -13,6 +13,10 @@ Chapter_subsections::Chapter_subsections()
 {
 	
 }
+Chapter_subsections::Chapter_subsections(int num)
+{
+	sub_sect_num = num;
+}
 Chapter_subsections::Chapter_subsections(list<string> hw)
 {
 	complete_hw_list = hw;
