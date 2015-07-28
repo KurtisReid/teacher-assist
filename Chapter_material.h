@@ -61,8 +61,9 @@ class Chapter_material
 	public:
 		Chapter_material();
 		Chapter_material(string ch_name, int ch_num, int ch_sects, map<int, Chapter_subsections> sect_map);
+		Chapter_material(string ch_name, int ch_num, int ch_sects);
 		void pick_sections(ofstream& writefile);
-		void set_sections();
+		void set_section(int num);
 		
 	private:
 		string chapter_name;

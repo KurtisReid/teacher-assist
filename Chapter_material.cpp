@@ -17,7 +17,16 @@ Chapter_material::Chapter_material()
 }
 Chapter_material::Chapter_material(string ch_name, int ch_num, int ch_sects, map<int, Chapter_subsections> sect_map)
 {
-	
+	chapter_name = ch_name;
+	chapter_num = ch_num;
+	chapter_sections = ch_sects;
+	sections = sect_map;
+}
+Chapter_material::Chapter_material(string ch_name, int ch_num, int ch_sects)
+{
+	chapter_name = ch_name;
+	chapter_num = ch_num;
+	chapter_sections = ch_sects;
 }
 void Chapter_material::pick_sections(ofstream& writefile)
 {
@@ -68,6 +77,7 @@ void Chapter_material::set_section(int num)
 {
 	//map<int, Chapter_subsections> sections;
 	
+	
 	Chapter_subsections chap_subsect = Chapter_subsections(num);
 	bool stay = true;
 	int choice;
@@ -85,4 +95,9 @@ void Chapter_material::set_section(int num)
 		}
 	} while (stay == true);
 	cout << "chapter_subsection modification finished" << endl;
+	
+	//assuming that the section does not exist in map yet
+	sections[num] = chap_subsect;
+	
+	
 }

@@ -27,7 +27,14 @@ Class_material::Class_material(map<int, Chapter_material>, stack<string>)
 void Class_material::create_book()
 {
 	//map<int, Chapter_material> book;
+	Chapter_material ch = Chapter_material("chapter one", 1, 3);
+	ch1.set_section(int num);
 	
+	/*
+		7/28/15
+		I stopped here
+	
+	*/
 	
 }
 
