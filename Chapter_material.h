@@ -1,9 +1,19 @@
 // chapter_material.h
 /*
 	most chapter classes will derive from this class
-	void pick_sections(ofstream& writefile);
-	ask userto input subsection number, maps to subsections, writes information onto file
 	
+Constructor functions:
+
+Input/Modification functions:
+
+Accessor functions:
+	void pick_sections(ofstream& writefile);
+	ask user to input subsection number, maps to subsections, writes information onto file
+	
+	
+Member variables:
+
+Notes to self:
 	please close files when done
 */
 
