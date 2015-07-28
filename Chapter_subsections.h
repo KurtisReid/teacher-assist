@@ -39,6 +39,11 @@ Accessor functions:
 	Pre:
 	Post:
 	
+	void get_problems(ofstream& writefile);
+	Passes complete_hw_list to print_to_file
+	Pre:
+	Post:
+	
 	
 Member variables:
 	list<string> hw_list;
@@ -64,6 +69,8 @@ class Chapter_subsections
 		//Chapter_subsections(string ws_name, ifstream& problems_file);
 		Chapter_subsections(list<string> hw);
 		void modify_information();
+		
+		void get_problems(ofstream& writefile);
 		
 		//for later development
 		//void select_HW_material(stack<string>& HW_problems_stack);// user selects what material was covered and calls get problems. gets all problems related to material

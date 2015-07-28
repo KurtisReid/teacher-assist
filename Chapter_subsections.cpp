@@ -35,6 +35,12 @@ void Chapter_subsections::select_specific_problems()
 }
 */
 
+void Chapter_subsections::get_problems(ofstream& writefile)
+{
+	//passing hw_list for first test. Will be expanded upon later.
+	print_to_file(writefile, complete_hw_list);
+}
+
 void Chapter_subsections::print_to_file(ofstream& writefile, list<string> prob_list)
 {
 	
