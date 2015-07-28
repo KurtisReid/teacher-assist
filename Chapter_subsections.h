@@ -15,8 +15,10 @@ Accessor functions:
 	Pre: ofstream passed to function must be initialized to text file. Hw_list must have problems in it and must be a list of strings.
 	Post: problems in hw_list are written to text file
 
+	
 	void select_HW_material(ofstream& writefile);
 	User selects what material was covered and calls function get_problems. gets all problems related to material
+	*Depreciated due to select_by_subject function in Chapter material class*
 	Pre:
 	Post:
 	
@@ -31,6 +33,7 @@ Accessor functions:
 	Post: more problems have been printed to file
 	
 	void hw_settings();
+	***Depreciated due to selection_settings function in Chapter material class***
 	User selects if they want all problems (complete_hw_list), subject-based problems, or specific problems to be printed to file.
 	Program calls functions accordingly.
 	Pre:
