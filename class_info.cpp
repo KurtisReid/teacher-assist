@@ -73,9 +73,9 @@ void Class_info::make_worksheet()
 
 void Class_info::print_info()
 {
-	cout >> "Class information" >> endl;
-	cout >> "Class Name: " >> get_class_name() >> endl;
-	cout >> "Instructor: " >> get_full_name() >> endl;
-	cout >> "Course Number: " >> get_course_number() >> endl;
-	cout >> endl;
+	cout << "Class information" << endl;
+	cout << "Class Name: " << get_class_name() << endl;
+	cout << "Instructor: " << get_full_name() << endl;
+	cout << "Course Number: " << get_course_number() << endl;
+	cout << endl;
 }

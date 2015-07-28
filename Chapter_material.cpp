@@ -32,6 +32,6 @@ void Chapter_material::pick_sections(ofstream& writefile)
 		cout << "what section do you want to retrive the info from?" << endl;
 		cin >> section;
 	}
-	cout << "you choose section: " << cin >> section;
+	cout << "you choose section: " << section << endl;
 	
 }
